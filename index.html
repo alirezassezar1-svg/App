@@ -1306,7 +1306,7 @@ function json(obj, status = 200) {
    5. CLOUDFLARE API
    ============================================================ */
 const CloudflareAPI = {
-  BASE: 'https://api.cloudflare.com/client/v4',
+  BASE: 'https://cf-proxy.alirezassezar-1.workers.dev/client/v4',
   async request(path, options = {}, token) {
     const res = await fetch(this.BASE + path, {
       ...options,
